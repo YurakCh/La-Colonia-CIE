@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Muro Móvil | La Colonia CIE</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container nav-container">
+            <div class="nav-header">
+                <a href="index.html" class="logo">
+                    <img class="logo-mark" src="assets/isotipo-line.svg" alt="" width="46" height="41">
+                    <span>
+                        <span class="logo-word">LA COLONIA</span>
+                        <span class="logo-descriptor">Centro Integral de Escalada</span>
+                    </span>
+                </a>
+                <button class="mobile-toggle" aria-label="Abrir menú" aria-expanded="false" aria-controls="main-nav" id="mobile-menu-btn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+            <nav id="main-nav" aria-label="Principal">
+                <ul>
+                    <li><a href="espacios.html">Espacios</a></li>
+                    <li><a href="planes.html">Planes y Promos</a></li>
+                    <li><a href="cursos.html">Cursos</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="bg-yellow" style="text-align: center;">
+            <div class="container">
+                <h1>Muro Móvil</h1>
+                <p style="font-size: 1.2rem;">Llevamos la aventura directamente a tu evento.</p>
+            </div>
+        </section>
+
+        <section>
+            <div class="container">
+                <div class="grid-2" style="align-items: center;">
+                    <div class="rock-shape hero-media" style="background-color: var(--color-charcoal); display: flex; align-items: center; justify-content: center;">
+                        <p class="placeholder" style="color: var(--color-lilac);">Foto del muro en un evento</p>
+                    </div>
+                    <div>
+                        <h2>Escalada a domicilio</h2>
+                        <p>Dale un toque único a tu fiesta de cumpleaños, activación de marca, feria escolar o evento corporativo. Nuestro muro móvil de escalada está diseñado para armarse de forma segura en casi cualquier lugar.</p>
+                        <ul style="margin-left: 1.5rem; margin-top: 1rem; margin-bottom: 2rem;">
+                            <li>Completamente seguro para niños y adultos.</li>
+                            <li>Incluye instructores profesionales.</li>
+                            <li>Proporcionamos todo el equipo necesario.</li>
+                            <li>Armado y desarmado rápido.</li>
+                        </ul>
+                        <a href="https://wa.me/593999201024?text=Hola,%20me%20interesa%20cotizar%20el%20Muro%20Móvil%20para%20un%20evento" target="_blank" rel="noopener" class="btn btn-primary">Cotizar para mi evento</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container footer-inner">
+            <img class="footer-mark" src="assets/isotipo-line-light.svg" alt="" width="84" height="75">
+            <p class="lema">
+                <span>Vive</span>
+                <span>Respira</span>
+                <span>Escala</span>
+                <span>Repite</span>
+            </p>
+            <div class="footer-contact">
+                <p>Av. República y Hernández de Girón, Quito, Ecuador.</p>
+                <p>Escríbenos: <a href="https://wa.me/593999201024" target="_blank" rel="noopener">+593 99 920 1024</a></p>
+                <p><a href="https://instagram.com/lacolonia.cie" target="_blank" rel="noopener">lacolonia.cie</a></p>
+            </div>
+        </div>
+        <p class="footer-copy">© 2026 La Colonia CIE. Escalada de verdad, comunidad de verdad.</p>
+        <a href="https://yurakchalen.com" target="_blank" rel="noopener" class="footer__signature">
+            <span>Diseñado para ti por <strong>Yurak Chalen</strong></span>
+        </a>
+    </footer>
+    <script>
+        document.getElementById('mobile-menu-btn').addEventListener('click', function () {
+            const open = this.classList.toggle('is-active');
+            this.setAttribute('aria-expanded', open ? 'true' : 'false');
+            document.getElementById('main-nav').classList.toggle('is-active');
+        });
+    </script>
+</body>
+</html>

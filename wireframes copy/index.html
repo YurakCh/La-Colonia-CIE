@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La Colonia CIE | Centro Integral de Escalada</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container nav-container">
+            <div class="nav-header">
+                <a href="index.html" class="logo">
+                    <div class="logo-rock"></div>
+                    La Colonia
+                </a>
+                <button class="mobile-toggle" aria-label="Abrir menú" id="mobile-menu-btn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+            <nav id="main-nav">
+                <ul>
+                    <li><a href="espacios.html">Espacios</a></li>
+                    <li><a href="planes.html">Planes y Promos</a></li>
+                    <li><a href="cursos.html">Cursos</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="container grid-2" style="align-items: center;">
+                <div>
+                    <h1>Escala,<br>Juega,<br>Conecta.</h1>
+                    <p style="font-size: 1.4rem; margin-top: 1rem;">El centro de escalada y boulder con más vibra de Quito. Ven a desafiar la gravedad con nosotros.</p>
+                    <div class="btn-group">
+                        <a href="planes.html" class="btn">Ver Promos</a>
+                        <a href="cursos.html" class="btn btn-primary">Empieza a Escalar</a>
+                    </div>
+                </div>
+                <div class="rock-shape hero-media">
+                    <!-- Placeholder de imagen real descargada -->
+                    <img src="../img/colonia_referencia.jpg" alt="Escalador en La Colonia">
+                </div>
+            </div>
+        </section>
+
+        <!-- Destacados -->
+        <section class="bg-yellow">
+            <div class="container">
+                <h2 style="text-align: center;">¿Por qué somos la bomba? 🧗‍♀️</h2>
+                <div class="grid-3" style="margin-top: 3rem;">
+                    <div class="card">
+                        <h3>Muros para todos</h3>
+                        <p>Desde el primerizo tembloroso hasta el experto escalador, tenemos rutas frescas armadas constantemente.</p>
+                    </div>
+                    <div class="card" >
+                        <h3>Comunidad Brutal</h3>
+                        <p>No solo vienes a sudar, vienes a parchar, comer parrillada los lunes y hacer amigos.</p>
+                    </div>
+                    <div class="card">
+                        <h3>Equipazo Petzl</h3>
+                        <p>Si tomas un curso, te prestamos todo el equipo Petzl para que no gastes una fortuna al empezar.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTAs Rápidos -->
+        <section>
+            <div class="container text-center" style="text-align: center;">
+                <h2>Un Vistazo a Nuestros Planes</h2>
+                <div class="grid-2" style="margin-top: 2rem;">
+                    <article class="card">
+                        <h3 class="card-title">Pase Diario Libre</h3>
+                        <div class="price-tag">$7.00</div>
+                        <p>Ven cuando quieras, quédate el tiempo que quieras. ¡Pura escalada!</p>
+                        <a href="https://wa.me/593999201024?text=Hola,%20me%20interesa%20el%20Pase%20Diario%20Libre" target="_blank" class="btn btn-primary" style="margin-top: 1rem;">Me interesa</a>
+                    </article>
+                    <article class="card bg-dark" style="color: white;">
+                        <h3 class="card-title" style="color: var(--color-primary);">Viernes de Escalada</h3>
+                        <div class="price-tag" style="background: var(--color-accent); color: white;">$5.00</div>
+                        <p>Empieza el finde con energía. Incluye reto con premio sorpresa. ¡Aprovéchalo!</p>
+                        <a href="https://wa.me/593999201024?text=Hola,%20quiero%20aprovechar%20el%20Viernes%20a%20$5" target="_blank" class="btn" style="margin-top: 1rem;">Quiero ir</a>
+                    </article>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <h2>La Colonia CIE</h2>
+            <p>Av. República y Hernández de Girón, Quito, Ecuador.</p>
+            <p>Escríbenos: <a href="https://wa.me/593999201024" target="_blank">+593 99 920 1024</a></p>
+            <p style="margin-top: 2rem; font-size: 0.9rem; opacity: 0.8; margin-bottom: 2rem;">© 2026 La Colonia CIE. Escalada de verdad, comunidad de verdad.</p>
+        </div>
+        <a href="https://yurakchalen.com" target="_blank" class="footer__signature">
+            <span>Diseñado para ti por <strong>Yurak Chalen</strong></span>
+        </a>
+    </footer>
+    <script>
+        document.getElementById('mobile-menu-btn').addEventListener('click', function() {
+            this.classList.toggle('is-active');
+            document.getElementById('main-nav').classList.toggle('is-active');
+        });
+    </script>
+</body>
+</html>

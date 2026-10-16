@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto y Reservas | La Colonia CIE</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container nav-container">
+            <div class="nav-header">
+                <a href="index.html" class="logo">
+                    <img class="logo-mark" src="assets/isotipo-line.svg" alt="" width="46" height="41">
+                    <span>
+                        <span class="logo-word">LA COLONIA</span>
+                        <span class="logo-descriptor">Centro Integral de Escalada</span>
+                    </span>
+                </a>
+                <button class="mobile-toggle" aria-label="Abrir menú" aria-expanded="false" aria-controls="main-nav" id="mobile-menu-btn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+            <nav id="main-nav" aria-label="Principal">
+                <ul>
+                    <li><a href="espacios.html">Espacios</a></li>
+                    <li><a href="planes.html">Planes y Promos</a></li>
+                    <li><a href="cursos.html">Cursos</a></li>
+                    <li><a href="contacto.html" aria-current="page">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section>
+            <div class="container">
+                <h1 style="text-align: center;">¡Hablemos!</h1>
+                <p style="text-align: center; margin-bottom: 3rem;">Escríbenos al WhatsApp para confirmar pagos y apartar tu cupo.</p>
+
+                <div class="grid-2">
+                    <div class="card bg-yellow">
+                        <h2>Contacto directo</h2>
+                        <p style="font-size: 1.2rem; font-weight: bold;">Dirección</p>
+                        <p>Av. República y Hernández de Girón, Quito, Ecuador.</p>
+
+                        <p style="font-size: 1.2rem; font-weight: bold; margin-top: 1.5rem;">WhatsApp reservas</p>
+                        <p>+593 99 920 1024</p>
+
+                        <a href="https://wa.me/593999201024" class="btn btn-primary" style="margin-top: 2rem; width: 100%;">Chatear ahora</a>
+                    </div>
+
+                    <div class="card bg-dark">
+                        <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+                            <circle cx="12" cy="12" r="8"/>
+                            <path d="M12 8v5l3 2"/>
+                            <circle class="accent" cx="12" cy="12" r="0.8"/>
+                        </svg>
+                        <h2>Horarios de atención</h2>
+                        <ul style="list-style: none; margin-top: 1rem; line-height: 2;">
+                            <li style="display: flex; justify-content: space-between; gap: 1rem; border-bottom: 1px solid rgba(255,255,255,0.15);">
+                                <span>Lunes a Jueves</span> <strong>08:00 - 22:00</strong>
+                            </li>
+                            <li style="display: flex; justify-content: space-between; gap: 1rem; border-bottom: 1px solid rgba(255,255,255,0.15);">
+                                <span>Viernes</span> <strong>08:00 - 21:00</strong>
+                            </li>
+                            <li style="display: flex; justify-content: space-between; gap: 1rem; border-bottom: 1px solid rgba(255,255,255,0.15);">
+                                <span>Sábados y Domingos</span> <strong>09:00 - 18:00</strong>
+                            </li>
+                            <li style="display: flex; justify-content: space-between; gap: 1rem; border-bottom: 1px solid rgba(255,255,255,0.15);">
+                                <span>Feriados</span> <strong>Consultar en IG</strong>
+                            </li>
+                        </ul>
+                        <a href="https://maps.app.goo.gl/9HAM3QQRH5iJTYdeA" target="_blank" rel="noopener" class="btn" style="margin-top: 1.5rem; width: 100%;">Cómo llegar</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section style="padding-top: 0;">
+            <div class="container">
+                <iframe
+                    class="map-frame"
+                    src="https://www.google.com/maps?cid=2421544217153340385&hl=es&source=embed&output=embed"
+                    title="Mapa de La Colonia CIE"
+                    allowfullscreen=""
+                    loading="lazy">
+                </iframe>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container footer-inner">
+            <img class="footer-mark" src="assets/isotipo-line-light.svg" alt="" width="84" height="75">
+            <p class="lema">
+                <span>Vive</span>
+                <span>Respira</span>
+                <span>Escala</span>
+                <span>Repite</span>
+            </p>
+            <div class="footer-contact">
+                <p>Av. República y Hernández de Girón, Quito, Ecuador.</p>
+                <p>Escríbenos: <a href="https://wa.me/593999201024" target="_blank" rel="noopener">+593 99 920 1024</a></p>
+                <p><a href="https://instagram.com/lacolonia.cie" target="_blank" rel="noopener">lacolonia.cie</a></p>
+            </div>
+        </div>
+        <p class="footer-copy">© 2026 La Colonia CIE. Escalada de verdad, comunidad de verdad.</p>
+        <a href="https://yurakchalen.com" target="_blank" rel="noopener" class="footer__signature">
+            <span>Diseñado para ti por <strong>Yurak Chalen</strong></span>
+        </a>
+    </footer>
+    <script>
+        document.getElementById('mobile-menu-btn').addEventListener('click', function () {
+            const open = this.classList.toggle('is-active');
+            this.setAttribute('aria-expanded', open ? 'true' : 'false');
+            document.getElementById('main-nav').classList.toggle('is-active');
+        });
+    </script>
+</body>
+</html>

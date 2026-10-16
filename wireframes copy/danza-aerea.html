@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Danza Aérea | La Colonia CIE</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container nav-container">
+            <div class="nav-header">
+                <a href="index.html" class="logo">
+                    <div class="logo-rock"></div>
+                    La Colonia
+                </a>
+                <button class="mobile-toggle" aria-label="Abrir menú" id="mobile-menu-btn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+            <nav id="main-nav">
+                <ul>
+                    <li><a href="espacios.html">Espacios</a></li>
+                    <li><a href="planes.html">Planes y Promos</a></li>
+                    <li><a href="cursos.html">Cursos</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="bg-alt" style="text-align: center;">
+            <div class="container">
+                <h1 style="color: var(--color-accent); text-shadow: 4px 4px 0px var(--color-primary);">Danza Aérea</h1>
+                <p style="font-size: 1.2rem;">Domina la gravedad con gracia y fuerza.</p>
+            </div>
+        </section>
+
+        <section>
+            <div class="container">
+                <div class="grid-2" style="align-items: center;">
+                    <div>
+                        <h2>Telas y Lira</h2>
+                        <p>La danza aérea es el complemento perfecto para la escalada. Gana fuerza de core, flexibilidad y control corporal en nuestras clases especializadas de telas y lira.</p>
+                        <p>No necesitas experiencia previa, nuestros instructores te guiarán paso a paso desde las posturas básicas hasta las caídas más emocionantes.</p>
+                        <a href="https://wa.me/593999201024?text=Hola,%20me%20interesa%20pedir%20información%20sobre%20las%20clases%20de%20Danza%20Aérea" target="_blank" class="btn btn-primary" style="margin-top: 1.5rem;">Consultar Horarios</a>
+                    </div>
+                    <div class="rock-shape hero-media" style="background-color: var(--color-primary); display: flex; align-items: center; justify-content: center; transform: rotate(1deg);">
+                        <h2 style="color: var(--color-secondary); opacity: 0.5;">[ Foto de Danza Aérea ]</h2>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <h2>La Colonia CIE</h2>
+            <p>Av. República y Hernández de Girón, Quito, Ecuador.</p>
+            <p>Escríbenos: <a href="https://wa.me/593999201024" target="_blank">+593 99 920 1024</a></p>
+            <p style="margin-top: 2rem; font-size: 0.9rem; opacity: 0.8; margin-bottom: 2rem;">© 2026 La Colonia CIE. Escalada de verdad, comunidad de verdad.</p>
+        </div>
+        <a href="https://yurakchalen.com" target="_blank" class="footer__signature">
+            <span>Diseñado para ti por <strong>Yurak Chalen</strong></span>
+        </a>
+    </footer>
+    <script>
+        document.getElementById('mobile-menu-btn').addEventListener('click', function() {
+            this.classList.toggle('is-active');
+            document.getElementById('main-nav').classList.toggle('is-active');
+        });
+    </script>
+</body>
+</html>

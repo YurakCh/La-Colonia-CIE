@@ -1,0 +1,14 @@
+# Agentes y reglas locales
+.agents/
+**/.agents/
+
+# Manuales y assets que no deben subirse
+Brand-docs-do-not-upload-anywhere/
+**/*do-not-upload*/
+**/*do not upload*/
+
+# Dependencias y caché de Cloudflare
+node_modules/
+.wrangler/
+.dev.vars
+*.log

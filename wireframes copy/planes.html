@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Planes y Promos | La Colonia CIE</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container nav-container">
+            <div class="nav-header">
+                <a href="index.html" class="logo">
+                    <div class="logo-rock"></div>
+                    La Colonia
+                </a>
+                <button class="mobile-toggle" aria-label="Abrir menú" id="mobile-menu-btn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+            <nav id="main-nav">
+                <ul>
+                    <li><a href="espacios.html">Espacios</a></li>
+                    <li><a href="planes.html">Planes y Promos</a></li>
+                    <li><a href="cursos.html">Cursos</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="bg-dark" style="text-align: center; padding-bottom: 2rem;">
+            <div class="container">
+                <h1 style="color: var(--color-primary); text-shadow: 4px 4px 0px var(--color-accent);">Pases y Promociones</h1>
+                <p style="color: white; font-size: 1.2rem;">En La Colonia tenemos opciones para todos. ¡Reserva rápido y fácil por WhatsApp!</p>
+            </div>
+        </section>
+
+        <!-- Promociones Locas -->
+        <section>
+            <div class="container">
+                <h2>Promos Semanales 🔥</h2>
+                <div class="grid-3">
+                    <div class="card" style="background-color: var(--color-primary); border-color: var(--color-secondary);">
+                        <h3>Lunes 2x1</h3>
+                        <p>¡Con parrillada incluida! Paga uno, escalan dos todo el día.</p>
+                        <a href="https://wa.me/593999201024?text=Hola,%20quiero%20reservar%20el%20Lunes%202x1" target="_blank" class="btn" style="background-color: white; color: var(--color-secondary);">Reservar 2x1</a>
+                    </div>
+                    <div class="card" style="background-color: var(--color-accent); color: white;">
+                        <h3 style="color: white;">Jueves 2x1 Chicas</h3>
+                        <p>Día de pura energía femenina. Ven con tu amiga y pagan la mitad.</p>
+                        <a href="whatsapp://send?text=¡Mira%20esta%20promo%20en%20La%20Colonia!%20Vamos%20el%20jueves%202x1%20de%20chicas.%20Reservemos%20con:%20593999201024%20https://127.0.0.1:5500/wireframes/planes.html" class="btn btn-primary">Compartir con mi amiga</a>
+                    </div>
+                    <div class="card">
+                        <h3>Viernes a $5</h3>
+                        <p>El pase más barato para empezar el fin de semana. ¡Incluye reto premio!</p>
+                        <div style="display: flex; align-items: center; justify-content: space-between; margin-top: 1rem;">
+                            <div class="price-tag" style="font-size: 1.5rem; margin: 0;">$5 USD</div>
+                            <a href="https://wa.me/593999201024?text=Hola,%20quiero%20ir%20el%20Viernes%20a%20$5" target="_blank" class="btn btn-primary" style="padding: 0.8rem 1.5rem;">Me apunto</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Pases Regulares -->
+        <section class="bg-alt">
+            <div class="container">
+                <h2>Pases Regulares</h2>
+                <div class="grid-2">
+                    <div class="card" style="text-align: center;">
+                        <h3 class="card-title">Pase Diario Libre</h3>
+                        <div class="price-tag">~$7.50</div>
+                        <p>Acceso total a las instalaciones de boulder por todo el día.</p>
+                        <a href="https://wa.me/593999201024?text=Hola,%20quiero%20comprar%20un%20Pase%20Diario" target="_blank" class="btn" style="margin-top: 1rem;">Comprar Pase</a>
+                    </div>
+                    <div class="card" style="text-align: center;">
+                        <h3 class="card-title">Paquete Familiar Fin de Semana</h3>
+                        <div class="price-tag">$8.00 <span style="font-size: 1rem; color: black;">/pax</span></div>
+                        <p>2 horas de escalada guiada + equipo. <strong>10% descuento</strong> si vienen 4 o más.</p>
+                        <a href="https://wa.me/593999201024?text=Hola,%20quiero%20reservar%20el%20Paquete%20Familiar" target="_blank" class="btn" style="margin-top: 1rem;">Reservar Paquete</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <h2>La Colonia CIE</h2>
+            <p>Av. República y Hernández de Girón, Quito, Ecuador.</p>
+            <p>Escríbenos: <a href="https://wa.me/593999201024" target="_blank">+593 99 920 1024</a></p>
+            <p style="margin-top: 2rem; font-size: 0.9rem; opacity: 0.8; margin-bottom: 2rem;">© 2026 La Colonia CIE. Escalada de verdad, comunidad de verdad.</p>
+        </div>
+        <a href="https://yurakchalen.com" target="_blank" class="footer__signature">
+            <span>Diseñado para ti por <strong>Yurak Chalen</strong></span>
+        </a>
+    </footer>
+    <script>
+        document.getElementById('mobile-menu-btn').addEventListener('click', function() {
+            this.classList.toggle('is-active');
+            document.getElementById('main-nav').classList.toggle('is-active');
+        });
+    </script>
+</body>
+</html>

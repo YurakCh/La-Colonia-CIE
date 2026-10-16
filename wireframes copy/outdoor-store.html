@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Outdoor Store | La Colonia CIE</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container nav-container">
+            <div class="nav-header">
+                <a href="index.html" class="logo">
+                    <div class="logo-rock"></div>
+                    La Colonia
+                </a>
+                <button class="mobile-toggle" aria-label="Abrir menú" id="mobile-menu-btn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+            <nav id="main-nav">
+                <ul>
+                    <li><a href="espacios.html">Espacios</a></li>
+                    <li><a href="planes.html">Planes y Promos</a></li>
+                    <li><a href="cursos.html">Cursos</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="bg-dark" style="text-align: center;">
+            <div class="container">
+                <h1 style="color: var(--color-primary); text-shadow: 4px 4px 0px var(--color-accent);">Outdoor Store</h1>
+                <p style="color: white; font-size: 1.2rem;">Tu equipamiento de montaña, a un paso del muro.</p>
+            </div>
+        </section>
+
+        <section>
+            <div class="container">
+                <div class="grid-2" style="align-items: center;">
+                    <div>
+                        <h2>Equipate con los mejores</h2>
+                        <p>No tienes que ir lejos para conseguir tu magnesia, cintas, arneses o pies de gato. Tenemos nuestra propia tienda física dentro de La Colonia.</p>
+                        <p>Trabajamos con marcas reconocidas para que escales seguro y con estilo.</p>
+                        <ul style="margin-left: 1.5rem; margin-top: 1rem; margin-bottom: 2rem;">
+                            <li>Venta de pies de gato (zapatos de escalada).</li>
+                            <li>Magnesia, cepillos y esparadrapo.</li>
+                            <li>Arneses, mosquetones y cintas express.</li>
+                            <li>Alquiler de equipo para tus salidas.</li>
+                        </ul>
+                        <a href="https://wa.me/593999201024?text=Hola,%20quisiera%20consultar%20el%20stock%20de%20la%20Outdoor%20Store" target="_blank" class="btn btn-primary">Consultar Stock por WhatsApp</a>
+                    </div>
+                    <div class="rock-shape hero-media" style="background-color: var(--bg-alt); display: flex; align-items: center; justify-content: center;">
+                        <h2 style="color: var(--color-secondary); opacity: 0.5;">[ Foto de la Tienda ]</h2>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <h2>La Colonia CIE</h2>
+            <p>Av. República y Hernández de Girón, Quito, Ecuador.</p>
+            <p>Escríbenos: <a href="https://wa.me/593999201024" target="_blank">+593 99 920 1024</a></p>
+            <p style="margin-top: 2rem; font-size: 0.9rem; opacity: 0.8; margin-bottom: 2rem;">© 2026 La Colonia CIE. Escalada de verdad, comunidad de verdad.</p>
+        </div>
+        <a href="https://yurakchalen.com" target="_blank" class="footer__signature">
+            <span>Diseñado para ti por <strong>Yurak Chalen</strong></span>
+        </a>
+    </footer>
+    <script>
+        document.getElementById('mobile-menu-btn').addEventListener('click', function() {
+            this.classList.toggle('is-active');
+            document.getElementById('main-nav').classList.toggle('is-active');
+        });
+    </script>
+</body>
+</html>

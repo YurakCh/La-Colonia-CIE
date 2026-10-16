@@ -1,0 +1,21 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "la-colonia-cie",
+  "compatibility_date": "2026-10-16",
+  "workers_dev": true,
+  "observability": {
+    "enabled": true,
+    "traces": {
+      "enabled": true
+    }
+  },
+  "assets": {
+    "directory": "."
+  },
+  "routes": [
+    {
+      "pattern": "lacolonia.yurakchalen.com",
+      "custom_domain": true
+    }
+  ]
+}

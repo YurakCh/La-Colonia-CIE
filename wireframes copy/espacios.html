@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Espacios y Servicios | La Colonia CIE</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container nav-container">
+            <div class="nav-header">
+                <a href="index.html" class="logo">
+                    <div class="logo-rock"></div>
+                    La Colonia
+                </a>
+                <button class="mobile-toggle" aria-label="Abrir menú" id="mobile-menu-btn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+            <nav id="main-nav">
+                <ul>
+                    <li><a href="espacios.html">Espacios</a></li>
+                    <li><a href="planes.html">Planes y Promos</a></li>
+                    <li><a href="cursos.html">Cursos</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section style="text-align: center;">
+            <div class="container">
+                <h1>Más que solo paredes.</h1>
+                <p>Conoce todo lo que tenemos armado para ti en La Colonia.</p>
+            </div>
+        </section>
+
+        <section class="bg-dark">
+            <div class="container">
+                <div class="grid-2">
+                    <div class="card" style="background: transparent; border-color: var(--color-primary); color: white;">
+                        <h2 style="color: var(--color-primary);">Zona Boulder 🧗‍♂️</h2>
+                        <p>Nuestra joya de la corona. Muros de diferentes inclinaciones (placas, desplomes, techos) con colchonetas de alta densidad. Rutas renovadas frecuentemente para que nunca te aburras.</p>
+                    </div>
+                    <div class="card" style="background: transparent; border-color: var(--color-accent); color: white;">
+                        <h2 style="color: var(--color-accent);">Zona de Entrenamiento 💪</h2>
+                        <p>Pesas, barras, campus board y zona de calentamiento. Todo lo necesario para ponerte a tono antes de atacar la pared.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Nueva Galería Visual -->
+        <section>
+            <div class="container text-center" style="text-align: center;">
+                <h2>Vistazo Rápido 📸</h2>
+                <p>Porque una imagen vale más que mil palabras.</p>
+                <div class="grid-3" style="margin-top: 2rem;">
+                    <!-- Placeholders para las fotos -->
+                    <div class="rock-shape" style="height: 200px; background-color: #e0e0e0; display: flex; align-items: center; justify-content: center; font-weight: bold; color: #888;">[ Foto Boulder ]</div>
+                    <div class="rock-shape" style="height: 200px; background-color: #e0e0e0; display: flex; align-items: center; justify-content: center; font-weight: bold; color: #888; transform: rotate(2deg);">[ Foto Entrenamiento ]</div>
+                    <div class="rock-shape" style="height: 200px; background-color: #e0e0e0; display: flex; align-items: center; justify-content: center; font-weight: bold; color: #888; transform: rotate(-2deg);">[ Foto Comunidad ]</div>
+                </div>
+            </div>
+        </section>
+
+        <section class="bg-yellow">
+            <div class="container text-center" style="text-align: center;">
+                <h2>Servicios Especiales ⭐</h2>
+                <div class="grid-3" style="margin-top: 3rem;">
+                    <a href="outdoor-store.html" style="text-decoration: none; color: inherit; display: block;" class="card">
+                        <h3>Outdoor Store</h3>
+                        <p>¿Te falta magnesia, cintas o pies de gato? Tenemos nuestra propia tienda de equipo de montaña en el local.</p>
+                        <span style="color: var(--color-accent); font-weight: bold; display: block; margin-top: 1rem;">Visitar tienda &rarr;</span>
+                    </a>
+                    <a href="danza-aerea.html" style="text-decoration: none; color: inherit; display: block;" class="card">
+                        <h3>Danza Aérea</h3>
+                        <p>Clases especiales de telas y lira. Otra forma increíble de dominar la gravedad.</p>
+                        <span style="color: var(--color-accent); font-weight: bold; display: block; margin-top: 1rem;">Ver detalles &rarr;</span>
+                    </a>
+                    <a href="muro-movil.html" style="text-decoration: none; color: inherit; display: block;" class="card">
+                        <h3>Muro Móvil</h3>
+                        <p>¿Tienes un evento? Llevamos un muro de escalada directamente a tu fiesta o activación corporativa.</p>
+                        <span style="color: var(--color-accent); font-weight: bold; display: block; margin-top: 1rem;">Cotizar &rarr;</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <h2>La Colonia CIE</h2>
+            <p>Av. República y Hernández de Girón, Quito, Ecuador.</p>
+            <p>Escríbenos: <a href="https://wa.me/593999201024" target="_blank">+593 99 920 1024</a></p>
+            <p style="margin-top: 2rem; font-size: 0.9rem; opacity: 0.8; margin-bottom: 2rem;">© 2026 La Colonia CIE. Escalada de verdad, comunidad de verdad.</p>
+        </div>
+        <a href="https://yurakchalen.com" target="_blank" class="footer__signature">
+            <span>Diseñado para ti por <strong>Yurak Chalen</strong></span>
+        </a>
+    </footer>
+    <script>
+        document.getElementById('mobile-menu-btn').addEventListener('click', function() {
+            this.classList.toggle('is-active');
+            document.getElementById('main-nav').classList.toggle('is-active');
+        });
+    </script>
+</body>
+</html>
